@@ -1,0 +1,91 @@
+:root {
+    --primary-bg: #ffffff; /* Light Theme */
+    --primary-text: #333333; /* Light Theme */
+    --secondary-bg: #f0f0f0; /* Light Theme */
+    --primary-bg-dark: #333333; /* Dark Theme */
+    --primary-text-dark: #ffffff; /* Dark Theme */
+    --secondary-bg-dark: #444444; /* Dark Theme */
+    --primary-bg-colorful: #ffcc00; /* Colorful Theme */
+    --primary-text-colorful: #ffffff; /* Colorful Theme */
+    --secondary-bg-colorful: #ff5733; /* Colorful Theme */
+    --overlay-color: rgba(0, 0, 0, 0.5); /* Overlay Color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+.theme-buttons {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.themed-section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+.dark {
+    background-color: var(--primary-bg-dark);
+    color: var(--primary-text-dark);
+}
+
+.colorful {
+    background-color: var(--primary-bg-colorful);
+    color: var(--primary-text-colorful);
+}
+
+.overlay-image {
+    background-image: url('https://via.placeholder.com/800x400');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.overlay-image p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+}

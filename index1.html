@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Color Exploration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Color Exploration</h1>
+        <div class="theme-buttons">
+            <button onclick="setTheme('light')">Light Theme</button>
+            <button onclick="setTheme('dark')">Dark Theme</button>
+            <button onclick="setTheme('colorful')">Colorful Theme</button>
+        </div>
+    </header>
+
+    <section class="themed-section light">
+        <h2>Light Theme</h2>
+        <p>This is a light-themed section with soft colors.</p>
+    </section>
+
+    <section class="themed-section dark">
+        <h2>Dark Theme</h2>
+        <p>This is a dark-themed section with bold colors.</p>
+    </section>
+
+    <section class="themed-section colorful">
+        <h2>Colorful Theme</h2>
+        <p>This section is vibrant and full of colors!</p>
+        <div class="overlay-image">
+            <p>Overlay Text</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created with love using HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
